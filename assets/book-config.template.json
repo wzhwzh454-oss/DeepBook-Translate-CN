@@ -1,0 +1,31 @@
+{
+  "book": {
+    "slug": "book",
+    "title": "",
+    "original_title": "",
+    "author": "",
+    "source_lang": "auto"
+  },
+  "translation": {
+    "profile": "v2",
+    "mode": "full-study-reader",
+    "preserve_all_content": true,
+    "search_grounding": "core-as-needed",
+    "coverage_min_rate": 1.0,
+    "readability": {
+      "sent_p50_max": 24,
+      "sent_p90_max": 45,
+      "sent_hard": 65,
+      "para_soft": 180,
+      "para_hard": 300
+    }
+  },
+  "layout": {
+    "font_name": "宋体",
+    "heading_font": "黑体",
+    "page_size": "A4",
+    "margins_inch": 1.0,
+    "include_chapter_vernacular_table": true,
+    "include_glossary_appendix": true
+  }
+}

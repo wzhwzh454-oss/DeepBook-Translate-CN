@@ -1,0 +1,6 @@
+# Core runtime dependencies used by PDF intake and DOCX assembly.
+PyMuPDF>=1.24,<2
+python-docx>=1.1,<2
+
+# Optional Windows-only layout finalization:
+# pywin32>=306

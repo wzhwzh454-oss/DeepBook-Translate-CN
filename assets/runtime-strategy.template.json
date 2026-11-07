@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "workspace": "<absolute workspace path>",
+  "recorded_at_utc": "<ISO-8601 UTC timestamp>",
+  "host": {
+    "product": "unknown",
+    "capabilities": {
+      "filesystem": {
+        "read": null,
+        "write": null
+      },
+      "script_execution": null,
+      "ocr": {
+        "available": null,
+        "languages": [],
+        "evidence": null
+      },
+      "conversation_management": {
+        "agent_can_open_new_conversation": null,
+        "agent_can_resume_workspace_in_new_conversation": null,
+        "evidence": null
+      },
+      "subagent": {
+        "available": null,
+        "fresh_context": null,
+        "shared_workspace": null,
+        "permitted_for_task": null
+      }
+    },
+    "context_policy": {
+      "kind": "unknown",
+      "evidence": null
+    }
+  },
+  "routing": {
+    "mode": "unknown",
+    "reason": "",
+    "writer_dispatch": "current_agent_disk",
+    "deterministic_work": "current_agent_disk",
+    "fallback_mode": "B"
+  },
+  "continuation": {
+    "mode": "unknown",
+    "handoff_trigger": "unknown",
+    "handoff_materials": [],
+    "user_summary": "",
+    "evidence": null
+  },
+  "context_contract": {
+    "load_current_action_inputs": true,
+    "include_relevant_terms": true,
+    "prior_chapters": "summary-and-relevant-tail-only",
+    "exclude_prior_full_sources_and_translations": true,
+    "exceptions": [
+      "Read the current chapter source for extraction or source audit when required."
+    ]
+  },
+  "recovery": {
+    "state_files": [
+      "book.json",
+      "book-continuity.json",
+      "global-term-ledger.json",
+      "chapter artifacts"
+    ],
+    "status_entrypoint": "scripts/chapter_status.py --workspace <chapter directory>",
+    "orchestrator_entrypoint": "scripts/orchestrate_book.py --workspace <workspace root>"
+  }
+}
